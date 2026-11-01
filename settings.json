@@ -1,0 +1,42 @@
+{
+  "activity_url": "https://cloud.tencent.com/act/pro/double11-202611",
+  "target": {
+    "product_slug": "lighthouse",
+    "sku_type": "bundle_budget_mc_lg4_01",
+    "name_keywords": ["4核4G", "300GB"],
+    "spec": {
+      "cpu": "4",
+      "ram": "4",
+      "bandwidth": "3M",
+      "monthlyTraffic": "300",
+      "systemDisk": "40GB SSD"
+    },
+    "time_span_unit": "12m",
+    "goods_num": 1,
+    "area": 1,
+    "max_price_yuan": 38.0,
+    "region_priority": [4, 1, 8]
+  },
+  "seckill": {
+    "auto_detect_session": true,
+    "manual_datetime": "",
+    "lead_ms": 1500,
+    "retry_window_s": 30
+  },
+  "runtime": {
+    "mode": "dry",
+    "check_before_buy": false,
+    "round_gap_s": 0.5,
+    "round_jitter_s": 0.5,
+    "buy_timeout_s": 3.0,
+    "backoff_408_s": 1.5,
+    "backoff_max_s": 8.0,
+    "max_consecutive_rate_limit": 5,
+    "max_rounds": 40,
+    "verbose": false
+  },
+  "log": {
+    "level": "info",
+    "open_browser_on_success": true
+  }
+}

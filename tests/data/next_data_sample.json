@@ -1,0 +1,95 @@
+{
+  "_comment": "2026-11-01 从 https://cloud.tencent.com/act/pro/double11-202611 活动页 __NEXT_DATA__ 实测提取的脱敏样本 (仅保留解析器所需字段, 数值未改动)",
+  "props": {
+    "pageProps": {
+      "QCACT_DOMAIN_CONFIG": {
+        "actApi": "act-api.cloud.tencent.com",
+        "buy": "buy.cloud.tencent.com",
+        "console": "console.cloud.tencent.com"
+      },
+      "activityData": {
+        "activityId": 166111704417621,
+        "ename": "double11-202611",
+        "isPreview": false,
+        "goodsList": [],
+        "isLogined": false,
+        "nowTime": 1793516287093,
+        "activityDetail": {
+          "startTime": 1791820800000,
+          "endTime": 1796054399000
+        },
+        "isTimeout": false,
+        "twoDaySeckillState": {
+          "nowTime": 1793516287093,
+          "dateList": ["2026-11-01", "2026-11-02"],
+          "flashResult": {
+            "2026-11-01": [
+              {
+                "activity_id": 166111704417621,
+                "dynamic_status": 2,
+                "dynamic_status_cn": "已结束",
+                "start_date": "2026-11-01",
+                "start_time": "10:00:00",
+                "end_date": "2026-11-01",
+                "end_time": "12:00:00",
+                "startTime": 1793498400000,
+                "endTime": 1793505600000,
+                "goods_type": "goods",
+                "id": 25139,
+                "seckill_type": "block",
+                "sales": ["__SALE__"]
+              },
+              {
+                "activity_id": 166111704417621,
+                "dynamic_status": 0,
+                "dynamic_status_cn": "未开始",
+                "start_date": "2026-11-01",
+                "start_time": "15:00:00",
+                "end_date": "2026-11-01",
+                "end_time": "18:00:00",
+                "startTime": 1793516400000,
+                "endTime": 1793527200000,
+                "goods_type": "goods",
+                "id": 25142,
+                "seckill_type": "block",
+                "sales": ["__SALE__"]
+              }
+            ],
+            "2026-11-02": [
+              {
+                "activity_id": 166111704417621,
+                "dynamic_status": 0,
+                "dynamic_status_cn": "未开始",
+                "start_date": "2026-11-02",
+                "start_time": "10:00:00",
+                "end_date": "2026-11-02",
+                "end_time": "12:00:00",
+                "startTime": 1793584800000,
+                "endTime": 1793592000000,
+                "goods_type": "goods",
+                "id": 25140,
+                "seckill_type": "block",
+                "sales": ["__SALE__"]
+              },
+              {
+                "activity_id": 166111704417621,
+                "dynamic_status": 0,
+                "dynamic_status_cn": "未开始",
+                "start_date": "2026-11-02",
+                "start_time": "15:00:00",
+                "end_date": "2026-11-02",
+                "end_time": "18:00:00",
+                "startTime": 1793602800000,
+                "endTime": 1793613600000,
+                "goods_type": "goods",
+                "id": 25141,
+                "seckill_type": "block",
+                "sales": ["__SALE__"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "ename": "double11-202611",
+  "activity_url": "https://cloud.tencent.com/act/pro/double11-202611",
+  "verified": false,
+  "verified_items": {
+    "page_params": {
+      "verified": true,
+      "at": "2026-11-01 22:33:50",
+      "source": "登录浏览器内活动页实测"
+    },
+    "check_api": {
+      "verified": true,
+      "at": "2026-11-01 22:33:50",
+      "source": "登录时网络捕获(含目标商品+全量地域)"
+    },
+    "buy_api": {
+      "verified": true,
+      "at": "2026-11-01 22:40 实测(登录态无签名头 preview:1 返回 1101001 未开抢)",
+      "engine": "api(主) + browser(兜底)",
+      "source": "do-goods 请求形状合法, business 可省略, withSign 当前未强制; 若未来强制则用 browser_engine.py"
+    }
+  },
+  "ACTIVITY_ID": 166111704417621,
+  "CHECK_ACT_ID": 1996855673581677,
+  "BUY_ACT_ID": 1996855673581677,
+  "SKU": "bundle_budget_mc_lg4_01",
+  "BUSINESS": null,
+  "GOODS_PARAM": {
+    "BlueprintId": "LINUX_UNIX",
+    "area": 1,
+    "ddocUnionConnect": 0,
+    "goodsNum": 1,
+    "imageId": "lhbp-eqora508",
+    "scenario": "0",
+    "timeSpanUnit": "12m",
+    "type": "bundle_budget_mc_lg4_01",
+    "zone": ""
+  },
+  "PRICE_REAL_COST_FEN": 3800,
+  "price_note": "real_cost=3800分=38元/年, 原价 total_cost=78000分=780元/年, 折扣 policy=4.8718, 来源: 页面 priceData (2026-11-01 实测)",
+  "SESSION_TIMES_DAILY": [
+    "10:00:00",
+    "15:00:00"
+  ],
+  "REGION_MAP": {
+    "4": "上海",
+    "8": "北京",
+    "1": "广州"
+  },
+  "X_CSRF_TOKEN_MANUAL": "",
+  "capture": {
+    "check_available": {
+      "url": "https://act-api.cloud.tencent.com/dianshi/check-available",
+      "method": "POST",
+      "payload": {
+        "activity_id": 166111704417621,
+        "goods": [
+          {
+            "act_id": 1996855673581677,
+            "region_id": [
+              4,
+              8,
+              1
+            ]
+          }
+        ],
+        "preview": 0
+      }
+    },
+    "do_goods": null,
+    "note": "get_cookies.py 登录时捕获 act-api 请求后写入, 供 check/下单复用真实模板",
+    "query_price_sample": {
+      "url": "https://act-api.cloud.tencent.com/dianshi/query-price",
+      "note": "免登录可用; 2026-11-01 22:15 实测: 秒杀品(1996855673581677) 上海/广州/北京 全部 real_cost=3800分=38元; 直购品(openclaw 2001194084080021)=10900分=109元(红线外, 严禁下单)",
+      "payload_shape": {
+        "activity_id": "ACTIVITY_ID",
+        "goods": [
+          {
+            "act_id": "BUY_ACT_ID",
+            "type": "lighthouse_v5",
+            "goods_param": "GOODS_PARAM+regionId",
+            "page_from": "act_buy"
+          }
+        ],
+        "preview": 0
+      }
+    }
+  },
+  "DIRECT_ACT_WARN": "2001194084080021=openclaw页面4核4G3M限新(109元/年) 同SKU直购入口, 价格超红线, 一律禁止下单",
+  "UA_NOTE": "全链路统一 tc.USER_AGENT (登录/恢复/请求); 2026-11-01 真正根因是 wait_for_url 误匹配登录页URL导致存了匿名cookie, 已修复为锚定正则+skey校验"
+}
